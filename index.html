@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 1px;
+            line-height: 50px;
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            background-color: lightblue;
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: lightblue;
+            padding: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }   
+        
+    </style>
+</head>
+<body>
+    <header>
+    <div class="menu" height="50px" style="background-color: lightblue; text-align: center;">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="service.html">services</a>
+                    <ul>
+                        <li><a href="#">development</a></li>
+                        <li><a href="#">support</a></li>
+                        <li><a href="#">training</a></li>
+                    </ul>
+                </li>
+                <li><a href="student.html">student</a>
+                    <ul id="drop">
+                        <li><a href="#">verify</a></li>
+                        <li><a href="#">certificate</a></li>
+                        <li><a href="#">marksheet</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <hr>
+    <marquee behavior="alternate" direction=""><h1>Welcome To ComputWorld</h1></marquee>
+    <hr>
+    </header>
+    <main>
+        <img src="cp.jpg" alt="" width="500px" height="300px" style="border-radius: 5%; margin-left: 33%; margin-top: 20px;border: double 5px lightcoral;">
+        <center><pre style="margin-right: 100px;margin-top: 20px;">
+            courses            duration           fees <br>
+            web development    3 months          20000 <br>
+            data science       6 months          30000 <br>
+            machine learning   6 months          30000 <br>
+            python             3 months          20000 <br>
+
+        </pre>
+    </center>
+
+    
+    
+</body>
+</html>
